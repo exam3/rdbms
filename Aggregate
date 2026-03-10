@@ -1,0 +1,5 @@
+select sum(salary) from jamal2;
+select max(salary) from jamal2;
+SQL> select min(salary) from jamal2;
+SQL> select avg(salary) from jamal2;
+SQL> select count(emp_id) from jamal2;
