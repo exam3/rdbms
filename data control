@@ -1,0 +1,10 @@
+Update :
+revoke update on jamal1 from reg_no;
+Select :
+revoke update on jamal1 from reg_no;
+Insert :
+revoke update on jamal1 from reg_no;
+Delete :
+revoke update on jamal1 from reg_no;
+Truncate :
+revoke update on jamal1 from reg_no;
