@@ -1,0 +1,5 @@
+
+SQL> select upper(name) from jamal1;
+SQL> select lower(name) from jamal1;
+SQL> select reverse(name) from jamal1;
+SQL> select length(name) from jamal1;
