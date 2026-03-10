@@ -1,0 +1,11 @@
+SQL> select j1.reg_no,j1.name,j2.m1,j2.m2 from jamal1 as j1 inner 
+join jamal4 as j2 on j1.reg_no = j2.reg_no;
+OUTER JOIN :
+SQL> select j1.reg_no,j1.name,j2.m1,j2.m2 from jamal1 as j1 outer 
+join jamal4 as j2 on j1.reg_no = j2.reg_no ;
+RIGHT JOIN :
+SQL> select j1.reg_no,j1.name,j2.m1,j2.m2 from jamal1 as j1 right 
+join jamal4 as j2 on j1.reg_no = j2.reg_no ;
+LEFT JOIN :
+SQL> select j1.reg_no,j1.name,j2.m1,j2.m2 from jamal1 as j1 left 
+join jamal4 as j2 on j1.reg_no = j2.reg_no ;
