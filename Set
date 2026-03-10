@@ -1,0 +1,5 @@
+
+SQL> select * from jamal1 union select * from jamal2 ;
+
+SQL> select * from jamal1 union all select * from jamal2 ;
+SQL> select * from jamal1 intersect select * from jamal2 ;
