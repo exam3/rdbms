@@ -1,0 +1,5 @@
+create table jamal1(reg_no varchar(10),name 
+varchar(20),dep varchar(10),percentage real);
+
+create table jamal1(reg_no varchar(10),name 
+varchar(20),dep varchar(10),percentage real,primary key(reg_no);
