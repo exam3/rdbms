@@ -1,0 +1,19 @@
+SQL> create or replace function fact(n number)return integer is
+ 2 begin
+ 3 if n=1 then return 1;
+ 4 else
+ 5 return n*fact(n-1);
+ 6 end if;
+ 7 end;
+ 8 /
+Function created.
+SQL> declare
+ 2 a number;
+ 3 b number:=&num;
+ 4 begin
+ 5 a:=fact(b);
+ 6 dbms_output.put_line('The given number is'||b);
+ 7 dbms_output.put_line('factorial is'||a);
+ 8 end;
+ 9 /
+
