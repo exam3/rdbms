@@ -1,0 +1,12 @@
+select * from jamal1;
+
+insert into jamal1 values(‘reg_no’,’name’,percentage);
+
+insert into jamal1 
+values(‘&reg_no’,’&name’,&percentage);
+
+update jamal1 set name = ‘Idris’ where reg_no 
+=‘24uca202’;
+
+delete from jamal1 where reg_no = ‘24uca212’ ;
+
