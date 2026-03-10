@@ -1,0 +1,27 @@
+create table jamal6(regno varchar(20),m1 number,m2 number,m3 
+number,total number,avg real);
+Table created.
+SQL> insert into jamal6 values('&regno',&m1,&m2,&m3,null,null);
+Enter value for regno: 24uca212
+Enter value for m1: 89
+Enter value for m2: 78
+Enter value for m3: 86
+old 1: insert into jamal6 values('&regno',&m1,&m2,&m3,null,null)
+new 1: insert into jamal6 values('24uca212',89,78,86,null,null)
+1 row created.
+ 2 cursor c1 is select * from jamal6;
+ 3 x jamal6 % rowtype;
+ 4 begin
+ 5 open c1;
+ 6 loop
+ 7 fetch c1 into x;
+ 8 exit when c1 % notfound;
+ 9 x.total:=x.m1+x.m2+x.m3;
+10 x.avg:=x.total/3;
+11 update jamal6 set total=x.total,avg=x.avg where regno = 
+‘24uca212’;
+12 end loop;
+13 close c1;
+14 end;
+15 /
+
