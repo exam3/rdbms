@@ -1,0 +1,17 @@
+SQL> set serveroutput on
+SQL> declare
+ 2 s1 varchar(50):='&str';
+ 3 s2 varchar2(50);
+ 4 s2 varchar2(50);
+ 5 begin
+ 6 c:=length(s1);
+ 7 while c>0 
+ 8 loop
+ 9 s2:=s2||substr(s1,c,1);
+10 c:=c-1;
+11 end loop;
+12 dbms_output.put_line('The given string is:'||s1);
+13 dbms_output.put_line('Reverse string is:'||s2);
+14 end;
+15 /
+
