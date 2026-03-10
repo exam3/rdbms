@@ -1,0 +1,3 @@
+delete from jamal1 where reg_no = ‘24uca210’, rollback;
+
+savepoint jamal1;
