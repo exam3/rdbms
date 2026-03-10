@@ -1,0 +1,8 @@
+alter table jamal1 rename column dep to 
+department_name;
+
+alter table jamal1 add column mail_id varchar(30);
+
+alter table jamal1 drop column mail_id;
+
+alter table jamal1 alter name varchar(50);
